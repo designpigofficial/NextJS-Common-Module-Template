@@ -1,6 +1,9 @@
 # Common/Models View NextJS Project Template
 ###### _With **dark/light theme** support (no flickers) and other out of the box components..._
 
+## How to use
+Download the repository, then in the console run `npm install` and `npm run dev` to test it.
+
 ## Structure
 ```
 /public
