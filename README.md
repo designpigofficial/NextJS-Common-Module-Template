@@ -226,8 +226,8 @@ Inside the **pages/\_document.js** file, more exactly inside the `body` tag, we 
 
 Which in the end, will just return a `script` tag containing a small script (automatically minified thanks to [uglify-js](https://www.npmjs.com/package/uglify-js "uglify-js")).
 
-The purpose of this script tag is to be **served** to the client with **SSR**, because by doing it this way, the script will be executed (*as a self calling anonymous function*) right on the page load with the theme color mode (dark/light) **already applied**, thus, **avoiding** the flickering.
-The flickering is caused because when the page is loaded, the default color will (usually) be the light palette mode. **Only after** the page has been loaded and, React kicks-in, the **ThemeContextProvider** will  apply the correct mode retrieved by the `theme-color-mode` key saved into the **local storage**, thus causing that annoying white-to-dark flickering.
+The purpose of this script tag is to be **served** directly to the client-side, because by doing it this way, the script will be executed (*as a self calling anonymous function*) right on the page load with the theme color mode (dark/light) **already applied**, thus, **avoiding** the flickering.
+The flickering is caused because when the page is loaded, the default color will (usually) be the light palette mode. **Only after** the page has been loaded and, NextJS kicks-in, the **ThemeContextProvider** will  apply the correct mode retrieved by the `theme-color-mode` key saved into the **local storage**, thus causing that annoying white-to-dark flickering.
 
 > You can always acces the ThemeContext by importing the context with `import ThemeContext from '@fmodules/theme/ThemeContext'` and then with `useContext` just extract the **colorMode** variable and the **toggleColorMode** method with `const { colorMode, toggleColorMode } = useContext(ThemeContext);`
 >
