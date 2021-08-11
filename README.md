@@ -8,6 +8,9 @@ Download the repository, then in the console run `npm install` and `npm run dev`
 - **[Absolute paths](#absolute-paths)**
 - **[How to configure and use the out of the box theme](#theme)**
 - **[Out of the box components](#out-of-the-box-components)**
+- **[HeadTags Component](#headtags)**
+- **[Image Component](#image)**
+- **[Link Component](#link)**
 
 ## Structure
 ```
@@ -247,6 +250,16 @@ And that's all about how the built-in theme module works and how to configure it
 
 
 ## Out of the box components
+
+---
+
+## HeadTags
+Details coming soon.
+
+## Image
+Details coming soon.
+
+## Link
 Details coming soon.
 
 ## Feel free to share your modified version. Let's try to create the most flexible and scalable template ever!
