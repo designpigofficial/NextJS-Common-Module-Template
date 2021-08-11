@@ -87,7 +87,7 @@ You can find the predefined absolute paths by accessing the **[jsconfig.json](ht
 
 All theme related files resides into the **modules/theme** folder.
 
-[========]
+---
 
 You should start by defining the theme color palette inside the **theme.css** file, like below:
 
@@ -119,7 +119,7 @@ The variables declared after the `/* name KEY USED INSIDE THE themeColors.js FIL
 
 You can name those variables as you like, because they will be defined inside the **themeColors.js** file.
 
-[========]
+---
 
 Inside the **themeColors.js** file, you have to export as *default* a JSON array, which can have two different structure.
 
@@ -162,7 +162,7 @@ This does mean that the css variable `page-text-color` will hold the `white` col
 > When is this useful?
 > **Maybe you want to have your app text color as the same colors you use for your background page, but of course you want them to be swapped based on the current color mode for a better contrast**.
 
-[========]
+---
 
 When you finished to declare all the variables and their color values, you can use the css variables as below.
 
@@ -196,13 +196,13 @@ Now, whenever I need an element to act like a container (which should switch **a
 
 > `<div className="container" theme-apply-bg-sec="true"><div>`
 
-[========]
+---
 
 The **themeApply.js** file is the script responsable for... (You guessed it :tw-1f604:) applying the correct palette based on the **current theme color mode**.
 
 > I'm not gonna get in details about how it does work, because it's a pretty simple script, and, if you are curious to check what it does, you can directly access it by clicking [here](https://github.com/AdiMarianMutu/NextJS-Common-Module-Template/blob/main/src/frontend/modules/theme/themeApply.js "here").
 
-[========]
+---
 
 Now the core feature of this theme module:
 **The reason why it does not flicker when the user refreshes a page!**
