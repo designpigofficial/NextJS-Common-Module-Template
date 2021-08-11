@@ -127,8 +127,8 @@ Inside the **themeColors.js** file, you have to export as *default* a JSON array
 
 ```json
 {
-	name: 'page-bg-color',
-	theme: 'cpalette-bg-main'
+  name: 'page-bg-color',
+  theme: 'cpalette-bg-main'
 }
 ```
 
@@ -142,11 +142,11 @@ The **theme** key value is gonna hold the current color palette, so you **don't*
 
 ```json
 {
-	name: 'page-text-color',
-	theme: {
-		light: 'black',
-		dark: 'white'
-	}
+  name: 'page-text-color',
+  theme: {
+    light: 'black',
+    dark: 'white'
+  }
 }
 ```
 
@@ -172,7 +172,7 @@ I'll add this inside the **global.css** file or directly into the **theme.css** 
 
 ```css
 * {
-	color: var(--page-text-color);
+  color: var(--page-text-color);
 }
 ```
 
@@ -185,10 +185,10 @@ Let's say I want all the containers style of my app to change based on the curre
 ```css
 /* USED TO MARK AN ELEMENT AS CONTAINER SO THE THEME CAN BE APPLIED */
 [theme-apply-bg-sec="true"] {
-	background-color: var(--page-containers-bg-color);
-	border-radius: 4px;
-	border: 1px solid var(--page-containers-border-color);
-	transition: background-color 0.3s ease-out;
+  background-color: var(--page-containers-bg-color);
+  border-radius: 4px;
+  border: 1px solid var(--page-containers-border-color);
+  transition: background-color 0.3s ease-out;
 }
 ```
 
@@ -213,9 +213,9 @@ Inside the **pages/\_document.js** file, more exactly inside the `body` tag, we 
 
 ```html
 <body>
-	<ThemeGetInitialColorMode /> <-- THIS
-	<Main />
-	<NextScript />
+  <ThemeGetInitialColorMode /> <-- THIS
+  <Main />
+  <NextScript />
 </body>
 ```
 
@@ -239,7 +239,7 @@ Inside the main function, there are some *placeholders* (marked with `/*{}*/`) w
 
 ```html
 <body>
-	<script id="theme-hydration">(()=>{const e=document.documentElement.style;var c,t=function(){const e=window.localStorage.getItem("theme-color-mode");if(e&&e.match(/^(light|dark)$/))return e;var t=window.matchMedia("(prefers-color-scheme: dark)");return t&&t.matches?"dark":"light"}();e.setProperty("--initial-color-mode",t),c=t,[{name:"page-bg-color",theme:"cpalette-bg-main"},{name:"page-containers-bg-color",theme:"cpalette-bg-sec"},{name:"page-containers-border-color",theme:"cpalette-border"},{name:"page-text-color",theme:"cpalette-bg-main<>"}].forEach(({name:e,theme:t})=>{let o;var a,r;o="object"!=typeof t?(r=(a=t.endsWith("<>"))?"light"===c?"dark":"light":[c],`var(--${t=a?t.replace("<>",""):t}-${r})`):t[c],window.document.documentElement.style.setProperty(`--${e}`,o)})})();</script>
+  <script id="theme-hydration">(()=>{const e=document.documentElement.style;var c,t=function(){const e=window.localStorage.getItem("theme-color-mode");if(e&&e.match(/^(light|dark)$/))return e;var t=window.matchMedia("(prefers-color-scheme: dark)");return t&&t.matches?"dark":"light"}();e.setProperty("--initial-color-mode",t),c=t,[{name:"page-bg-color",theme:"cpalette-bg-main"},{name:"page-containers-bg-color",theme:"cpalette-bg-sec"},{name:"page-containers-border-color",theme:"cpalette-border"},{name:"page-text-color",theme:"cpalette-bg-main<>"}].forEach(({name:e,theme:t})=>{let o;var a,r;o="object"!=typeof t?(r=(a=t.endsWith("<>"))?"light"===c?"dark":"light":[c],`var(--${t=a?t.replace("<>",""):t}-${r})`):t[c],window.document.documentElement.style.setProperty(`--${e}`,o)})})();</script>
 </body>
 ```
 
