@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 1em;
+}
+
+.title {
+  margin-right: 0.5em;
+}
+
+.theme-toggle {
+  user-select: none;
+}
+.theme-toggle:hover {
+  cursor: pointer;
+}

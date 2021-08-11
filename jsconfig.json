@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      /* 
+        [f] stands for frontend
+        [b] stands for backend
+        [s] stands for shared
+      */
+
+      /* public DIR */
+      "@public": ["./public/*"],
+      /* src DIR */
+      "@/*": ["*"],
+      /* BACKEND */
+      "@bend/*": ["backend/*"],
+      "@bdb/*": ["backend/db/*"],
+      "@bapi/*": ["backend/api/*"],
+      /* FRONTEND */
+      "@fend/*": ["frontend/*"],
+      "@fcommon/*": ["frontend/common/*"],
+      "@fmodules/*": ["frontend/modules/*"],
+      "@fpage": ["frontend/common/components/page/Page.jsx"],
+      "@fthemecss": ["frontend/modules/theme/theme.css"],
+      "@fglobalcss": ["frontend/common/styles/global.css"],
+      /* CODE SHARED ACROSS BACKEND AND FRONT END */
+      "@shared/*": ["shared/*"],
+      "@slib/*": ["shared/lib/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

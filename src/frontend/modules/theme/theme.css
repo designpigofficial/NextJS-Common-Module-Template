@@ -1,0 +1,33 @@
+:root {
+  /* COLOR PALETTE */
+  --cpalette-bg-main-light: #e5e5e5;
+  --cpalette-bg-main-dark: #0d1629;
+  --cpalette-bg-sec-light: #ffffff;
+  --cpalette-bg-sec-dark: #1f3461;
+  --cpalette-border-light: #0000004f;
+  --cpalette-border-dark: #5f92ff9e;
+  --cpalette-accent-light: #fca311;
+  --cpalette-accent-dark: #ff8200;
+  /* name KEY USED INSIDE THE themeColors.js FILE */
+  --initial-color-mode: null;
+  --page-bg-color: null;
+  --page-containers-bg-color: null;
+  --page-containers-border-color: null;
+  --page-text-color: null;
+}
+
+* {
+  color: var(--page-text-color);
+}
+
+/* USED TO MARK AN ELEMENT AS CONTAINER SO THE THEME CAN BE APPLIED */
+[theme-apply-bg-sec="true"] {
+  background-color: var(--page-containers-bg-color);
+  border-radius: 4px;
+  border: 1px solid var(--page-containers-border-color);
+  transition: background-color 0.3s ease-out;
+}
+
+body {
+  background-color: var(--page-bg-color) !important;
+}
