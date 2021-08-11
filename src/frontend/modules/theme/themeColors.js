@@ -7,7 +7,7 @@
   The theme key can be extend as object to provide custom values not defined in theme.css
   theme: {
     light: 'value',
-    dark: 'value
+    dark: 'value'
   }
 */
 
