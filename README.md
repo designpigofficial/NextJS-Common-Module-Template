@@ -35,6 +35,7 @@ Download the repository, then in the console run `npm install` and `npm run dev`
       /providers
       /styles
         global.css
+      /tests
       /utilis
         /lib
     /modules
