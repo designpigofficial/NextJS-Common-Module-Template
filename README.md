@@ -1,4 +1,4 @@
-# Common/Models View NextJS Project
+# Common/Models View NextJS Project Template
 ###### _With **dark/light theme** support (no flickers) and other out of the box components..._
 
 ## Structure
