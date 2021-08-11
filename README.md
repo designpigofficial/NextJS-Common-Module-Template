@@ -5,9 +5,9 @@
 Download the repository, then in the console run `npm install` and `npm run dev` to test it.
 
 ### Anchor links
-- **[Absolute paths](# Absolute paths)**
-- **[How to configure and use the out of the box theme](# Theme)**
-- **[Out of the box components](# Out of the box components)**
+- **[Absolute paths](#absolute-paths)**
+- **[How to configure and use the out of the box theme](#theme)**
+- **[Out of the box components](#out-of-the-box-components)**
 
 ## Structure
 ```
