@@ -6,7 +6,7 @@
 /public
 /src
   /backend
-    /api
+    /api (Where the actual API code will be stored, the page/api folder will be used only as a route)
       example.js
     /db
       /schemas
