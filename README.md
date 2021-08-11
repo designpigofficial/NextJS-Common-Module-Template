@@ -5,9 +5,9 @@
 Download the repository, then in the console run `npm install` and `npm run dev` to test it.
 
 ### Anchor links
-- **[Absolute paths](#Absolute paths)**
-- **[How to configure and use the out of the box theme](#Theme)**
-- **[Out of the box components](#Out of the box components)**
+- **[Absolute paths](# Absolute paths)**
+- **[How to configure and use the out of the box theme](# Theme)**
+- **[Out of the box components](# Out of the box components)**
 
 ## Structure
 ```
@@ -83,7 +83,7 @@ In order to avoid the spaghetti import mess created with the relative paths, I'v
 You can find the predefined absolute paths by accessing the **[jsconfig.json](https://github.com/AdiMarianMutu/NextJS-Common-Module-Template/blob/main/jsconfig.json "jsconfig.json")** file
 
 ## Theme
-#####The method used has been adapted to NextJS from [Joshua Comeau's article](https://www.joshwcomeau.com/react/dark-mode/ "Joshua Comeau's article")
+##### The method used has been adapted to NextJS from [Joshua Comeau's article](https://www.joshwcomeau.com/react/dark-mode/ "Joshua Comeau's article")
 
 All theme related files resides into the **modules/theme** folder.
 
