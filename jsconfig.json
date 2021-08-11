@@ -25,7 +25,10 @@
       "@fglobalcss": ["frontend/common/styles/global.css"],
       /* CODE SHARED ACROSS BACKEND AND FRONT END */
       "@shared/*": ["shared/*"],
-      "@slib/*": ["shared/lib/*"]
+      "@slib/*": ["shared/lib/*"],
+      /* WRAPPERS COMPONENTS */
+      "@link": ["frontend/common/components/wrappers/link/Link.jsx"],
+      "@image": ["frontend/common/components/wrappers/image/Image.jsx"]
     }
   },
   "exclude": ["node_modules"]

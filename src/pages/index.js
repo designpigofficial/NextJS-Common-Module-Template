@@ -1,5 +1,5 @@
 import Page from '@fpage';
-import Link from '@fcommon/components/wrappers/link/Link';
+import Link from '@link';
 
 export default function Home() {
   return (

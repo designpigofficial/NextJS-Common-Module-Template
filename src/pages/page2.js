@@ -1,6 +1,6 @@
 import Page from '@fpage';
-import Link from '@fcommon/components/wrappers/link/Link';
-import Image from '@fcommon/components/wrappers/image/Image';
+import Link from '@link';
+import Image from '@image';
 
 export default function Page2() {
 

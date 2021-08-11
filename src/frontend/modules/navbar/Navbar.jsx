@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import Link from '@fcommon/components/wrappers/link/Link';
+import Link from '@link';
 import ThemeContext from '@fmodules/theme/ThemeContext';
 
 import styles from './Navbar.module.css';
