@@ -212,7 +212,7 @@ The **themeApply.js** file is the script responsable for applying the correct pa
 Now the core feature of this theme module:
 **The reason why it does not flicker when the user refreshes a page!**
 
-> Again, I didn't come with this solution, I've just adapted it to NextJS from the GatsbyJS example written by [Joshua Comeau's](https://www.joshwcomeau.com/react/dark-mode/ "Joshua Comeau article")
+> Again, I didn't come with this solution, I've just adapted it to NextJS from the GatsbyJS example written by [Joshua Comeau](https://www.joshwcomeau.com/react/dark-mode/ "Joshua Comeau's article")
 
 Inside the **pages/\_document.js** file, more exactly inside the `body` tag, we have this code:
 
