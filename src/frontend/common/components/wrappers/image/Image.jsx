@@ -23,7 +23,7 @@ export default function _Image(props) {
           style={wrapperLoaderContainerDimensions}
         ></div>
       )}
-      <Image {...imageProps} onLoad={setLoaded.bind(true)} />
+      <Image {...imageProps} onLoadingComplete={setLoaded.bind(true)} />
     </div>
   );
 
