@@ -15,6 +15,8 @@ Download the repository, then in the console run `npm install` and `npm run dev`
 ## Structure
 ```
 /public
+  /assets
+    loading_image_example.jpg
 /src
   /backend
     /api (Where the actual API code will be stored, the page/api folder will be used only as a route)
@@ -116,11 +118,11 @@ You should start by defining the theme color palette inside the **theme.css** fi
 
 >It is **mandatory** for the color palette variables name to end with **-light** and **-dark**.
 
-The variables declared after the `/* name KEY USED INSIDE THE themeColors.js FILE */` comment will hold the color retrieved from the **color palette variables** and you will use them to apply the correct color mode to whatever element you want to be affected by the theme logic.
+The variables declared after the `/* name KEY USED INSIDE THE themeColors.js FILE */` comment are gonna hold the color retrieved from the **color palette variables** and you will use them to apply the correct color mode to whatever element you want to be affected by the theme logic.
 
 >The `--initial-color-mode` variable **must** be present because will hold the color mode retrieved from the client
 
-You can name those variables as you like, because they will be defined inside the **themeColors.js** file.
+You can name those variables as you like, because later we will use them inside the **themeColors.js** file as well in order to define the color mode logic.
 
 ---
 
@@ -201,7 +203,7 @@ Now, whenever I need an element to act like a container (which should switch **a
 
 ---
 
-The **themeApply.js** file is the script responsable for... (You guessed it :tw-1f604:) applying the correct palette based on the **current theme color mode**.
+The **themeApply.js** file is the script responsable for applying the correct palette based on the **current theme color mode**.
 
 > I'm not gonna get in details about how it does work, because it's a pretty simple script, and, if you are curious to check what it does, you can directly access it by clicking [here](https://github.com/AdiMarianMutu/NextJS-Common-Module-Template/blob/main/src/frontend/modules/theme/themeApply.js "here").
 
