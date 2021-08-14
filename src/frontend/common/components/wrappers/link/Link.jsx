@@ -12,7 +12,7 @@ export default function _Link(props) {
   */
   return (
     <Link {...props}>
-      <a data-wrapper-link='' href={props.as ? props.as : props.href} className={styles.link} tabIndex='-1'>
+      <a data-wrapper-link='' href={props.as ? props.as : props.href} style={props.style ? props.style : null} className={styles.link} tabIndex='-1'>
         {props.children}
       </a>
     </Link>
