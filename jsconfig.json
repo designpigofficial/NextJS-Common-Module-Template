@@ -1,34 +1,36 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
       /* 
-        [f] stands for frontend
-        [b] stands for backend
-        [s] stands for shared
+        [p] stands for public folder
+        [f] stands for frontend folder
+        [b] stands for backend folder 
+        [s] stands for shared folder
       */
 
       /* public DIR */
-      "@public": ["./public/*"],
+      "@public/*": ["/public/*"],
+      "@passets/*": ["/public/assets/*"],
       /* src DIR */
       "@/*": ["*"],
       /* BACKEND */
-      "@bend/*": ["backend/*"],
-      "@bdb/*": ["backend/db/*"],
-      "@bapi/*": ["backend/api/*"],
+      "@bend/*": ["/src/backend/*"],
+      "@bdb/*": ["/src/backend/db/*"],
+      "@bapi/*": ["/src/backend/api/*"],
       /* FRONTEND */
-      "@fend/*": ["frontend/*"],
-      "@fcommon/*": ["frontend/common/*"],
-      "@fmodules/*": ["frontend/modules/*"],
-      "@fpage": ["frontend/common/components/page/Page.jsx"],
-      "@fthemecss": ["frontend/modules/theme/theme.css"],
-      "@fglobalcss": ["frontend/common/styles/global.css"],
+      "@fend/*": ["/src/frontend/*"],
+      "@fcommon/*": ["/src/frontend/common/*"],
+      "@fmodules/*": ["/src/frontend/modules/*"],
+      "@fpage": ["/src/frontend/common/components/page/Page.jsx"],
+      "@fthemecss": ["/src/frontend/modules/theme/theme.css"],
+      "@fglobalcss": ["/src/frontend/common/styles/global.css"],
       /* CODE SHARED ACROSS BACKEND AND FRONT END */
-      "@shared/*": ["shared/*"],
-      "@slib/*": ["shared/lib/*"],
+      "@shared/*": ["/src/shared/*"],
+      "@slib/*": ["/src/shared/lib/*"],
       /* WRAPPERS COMPONENTS */
-      "@link": ["frontend/common/components/wrappers/link/Link.jsx"],
-      "@image": ["frontend/common/components/wrappers/image/Image.jsx"]
+      "@link": ["/src/frontend/common/components/wrappers/link/Link.jsx"],
+      "@image": ["/src/frontend/common/components/wrappers/image/Image.jsx"]
     }
   },
   "exclude": ["node_modules"]
