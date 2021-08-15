@@ -1,10 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+
 import Image from 'next/image';
 
 import styles from './Image.module.css';
 
 export default function _Image(props) {
+  const _isMounted = useRef(false);
   const [loaded, setLoaded] = useState();
+
+  useEffect(() => {
+    _isMounted.current = true;
+    return () => { _isMounted.current = false; };
+  }, []);
+
+  const onLoadedCallback = useCallback(() => {
+    if (_isMounted.current === true)
+      setLoaded(true);
+  }, [loaded]);
+
 
   const {wrapperClasses, loaderClasses, container, ...imageProps} = props;
   const hasContainer = !!container;
@@ -23,7 +36,7 @@ export default function _Image(props) {
           style={wrapperLoaderContainerDimensions}
         ></div>
       )}
-      <Image {...imageProps} onLoadingComplete={setLoaded.bind(true)} />
+      <Image {...imageProps} onLoadingComplete={onLoadedCallback} />
     </div>
   );
 
