@@ -197,7 +197,7 @@ Let's say I want all the containers style of my app to change based on the curre
 }
 ```
 
-Now, whenever I need an element to act like a container (which should switch **automatically** from dark to light mode* (and viceversa)*), I can just add the `theme-apply-bg-sec="true"` and my job is done.
+Now, whenever I need an element to act like a container (which should switch **automatically** from dark to light mode *(and viceversa)*), I can just add the `theme-apply-bg-sec="true"` and the code behind the hood will do the heavy work.
 
 > `<div className="container" theme-apply-bg-sec="true"><div>`
 
